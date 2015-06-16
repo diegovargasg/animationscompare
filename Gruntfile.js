@@ -36,7 +36,7 @@ module.exports = function (grunt) {
             },
             pages: {
               options: {
-                remote: 'git@github.com:diegovargasg/animationscompare.git',
+                remote: 'https://github.com/diegovargasg/animationscompare.git',
                 branch: 'gh-pages'
               }
             }
