@@ -26,6 +26,23 @@ module.exports = function (grunt) {
     };
 
     grunt.initConfig({
+
+        buildcontrol: {
+            options: {
+              dir: 'dist',
+              commit: true,
+              push: true,
+              message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+            },
+            pages: {
+              options: {
+                remote: 'git@github.com:diegovargasg/animationscompare.git',
+                branch: 'gh-pages'
+              }
+            }
+        },
+
+
         yeoman: yeomanConfig,
         watch: {
             options: {
@@ -386,6 +403,7 @@ module.exports = function (grunt) {
         console.log('this is example');
     });
 
+    grunt.loadNpmTasks('grunt-build-control');
 
     grunt.registerTask('build', [
         'clean:dist',
@@ -401,7 +419,7 @@ module.exports = function (grunt) {
         'requirejs',
         'copy:generated',
         'uglify',
-        'rev',
+        //'rev',
         'usemin'
     ]);
 

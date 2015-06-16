@@ -36,8 +36,8 @@ define([
 
                     var animateLoopBar = function(){
 
-                        self.$el.find('.progress-bar > span').css('width', '0');
-                        self.$el.find('.progress-bar > span').animate({
+                        self.$el.find('.progress-bar-bar > div').css('width', '0');
+                        self.$el.find('.progress-bar-bar > div').animate({
                             width: '100%'
                         }, 2000, 'linear', animateLoopBar);
                     };

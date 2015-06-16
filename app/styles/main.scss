@@ -167,7 +167,7 @@ body {
     -o-animation: movePlane 2s linear infinite;
     animation: movePlane 2s linear infinite;    
 }
-.css3 .progress-bar > span{
+.css3 .progress-bar-bar > div{
     -webkit-animation: expandWidth 2s linear infinite;
     -moz-animation: expandWidth 2s linear infinite;
     -o-animation: expandWidth 2s linear infinite;
@@ -179,13 +179,13 @@ body {
     top: -22px;
     left: 0;
 }
-.progress-bar {
+.progress-bar-bar {
         height: 2.4px;
         position: relative;
         background: #b1b1b1;
         z-index: 100000;
         width: 100%;
-    > span{
+    > div{
         display: block;
         width: 0%;
         height: 100%;
