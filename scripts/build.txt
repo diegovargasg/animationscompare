@@ -7,7 +7,6 @@ jquery.js
 backbone.js
 templates.js
 views/header.js
-views/footer.js
 models/object.js
 collections/object.js
 views/object.js
