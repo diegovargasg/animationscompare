@@ -102,6 +102,8 @@ body {
 #aside{
     label{ 
         font-size: 14px;
+        font-weight: normal;
+        padding-left: 0px;
     }  
 }
 #main-section-wrap{
@@ -183,7 +185,7 @@ body {
         height: 2.4px;
         position: relative;
         background: #b1b1b1;
-        z-index: 100000;
+        z-index: 100;
         width: 100%;
     > div{
         display: block;
@@ -193,4 +195,10 @@ body {
         position: relative;
         overflow: hidden;
     }
+}
+.page-header{
+    border-bottom: none;
+}
+.initial-message{
+    text-align: center;
 }

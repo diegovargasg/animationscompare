@@ -45,6 +45,7 @@ define([
             if( this.isRunning === false ){
                 // Disable checkboxs
                 this.checkBoxsControl();
+                $('.initial-message').remove();
 
                 var checkboxsVal = this.$el.find('input:checked').data('type');
                

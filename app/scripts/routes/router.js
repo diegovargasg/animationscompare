@@ -4,10 +4,9 @@ define([
     'jquery',
     'backbone',
     'views/header',
-    'views/footer',
     'views/aside',
     'views/content'
-], function ($, Backbone, HeaderView, FooterView, AsideView, ContentView) {
+], function ($, Backbone, HeaderView, AsideView, ContentView) {
     'use strict';
 
     var RouterRouter = Backbone.Router.extend({
@@ -19,14 +18,13 @@ define([
     /**
      * Default Route Method
      * @private
-     * @description init the general layout elements like header, footer, content, aside
+     * @description init the general layout elements like header, content, aside
      * @type {function}
      */
     var defaultRoute = function() {
 
         var contentView = new ContentView();
     	var headerView = new HeaderView();
-    	var footerView = new FooterView();
     	var asideView = new AsideView();
 	};
 
