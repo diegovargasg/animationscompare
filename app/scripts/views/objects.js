@@ -24,6 +24,13 @@ define([
 
         initialize: function () {
             this.listenTo(this.collection, 'add', this.renderOne);
+            this.listenTo(this.collection, 'reset', this.resetAll);
+        },
+
+        resetAll: function(col, opts){
+            _.each(opts.previousModels, function(model){
+                model.trigger('remove');
+            });
         },
 
         renderOne: function(object){
@@ -40,7 +47,8 @@ define([
         },
 
         remove: function(){
-            this.$el.html('');
+            this.$el.unbind();
+            this.$el.remove();
         }
     });
 

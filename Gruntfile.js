@@ -41,8 +41,6 @@ module.exports = function (grunt) {
               }
             }
         },
-
-
         yeoman: yeomanConfig,
         watch: {
             options: {
@@ -188,6 +186,7 @@ module.exports = function (grunt) {
                         'jquery': '../../<%= yeoman.app %>/bower_components/jquery/dist/jquery',
                         'underscore': '../../<%= yeoman.app %>/bower_components/lodash/dist/lodash',
                         'backbone': '../../<%= yeoman.app %>/bower_components/backbone/backbone',
+                        'gsap': '../../<%= yeoman.app %>/bower_components/gsap/src/minified/TweenMax.min',
                     },
                     modules: [{name: 'main'}],
                     baseUrl: '<%= yeoman.app %>/scripts',
