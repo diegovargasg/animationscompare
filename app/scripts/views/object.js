@@ -28,6 +28,10 @@ define([
 
         stopAnimate: false,
 
+        progressBarPlaneTween: {},
+
+        progressBarTween: {},
+
         modelStopAnimate: function(){
             switch(this.model.get('type')){
                 case 'css3':
@@ -38,7 +42,11 @@ define([
                     break;
                 case 'GSAP':
                     //kill everything
-                    TweenMax.killAll();
+                    //TweenMax.killAll();
+
+                    this.progressBarPlaneTween.kill();
+                    this.progressBarTween.kill();
+
                     break;
                 default:
                     
@@ -84,8 +92,8 @@ define([
                     var progressBarPlane = this.$el.find('.progress-bar-plane'),
                         progressBar = this.$el.find('.progress-bar-bar > div');
 
-                    TweenMax.to(progressBarPlane, 2, {left: '100%', ease: 'linear', repeat: -1});
-                    TweenMax.to(progressBar, 2, {width: '100%', ease: 'linear', repeat: -1});
+                    this.progressBarPlaneTween = new TweenMax(progressBarPlane, 2, {left: '100%', ease: 'linear', repeat: -1});
+                    this.progressBarTween = new TweenMax(progressBar, 2, {width: '100%', ease: 'linear', repeat: -1});
 
                     break;
                 default:
