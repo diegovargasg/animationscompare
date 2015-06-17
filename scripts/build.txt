@@ -9,6 +9,7 @@ templates.js
 views/header.js
 models/object.js
 collections/object.js
+gsap.js
 views/object.js
 views/objects.js
 views/aside.js

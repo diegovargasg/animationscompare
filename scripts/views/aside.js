@@ -70,8 +70,8 @@ define([
                 this.checkBoxsControl();
 
                 //If the view is stopped, destroy all the objects view and collection
-                this.objectCollection = {};
-                this.objectsView.remove();
+                this.objectCollection.reset();
+                //this.objectsView.remove();
                 this.isRunning = false;
             }
 
