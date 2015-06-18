@@ -10,6 +10,7 @@ views/header.js
 models/object.js
 collections/object.js
 gsap.js
+famous.js
 views/object.js
 views/objects.js
 views/aside.js

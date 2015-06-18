@@ -82,16 +82,17 @@ define([
         updateNumObjects: function(){
 
             var newVal = parseInt(this.$el.find('#num-el').val());
+            var checkboxsVal = this.$el.find('input:checked').data('type');
 
             if( this.isRunning === true ){
 
                 if( newVal > this.numElVal ){
                     //Insert the new number of object into the collection
-
                     var numNewObj = newVal - this.numElVal;
 
                     for (var i = 1; i <= numNewObj; i++) {
                         var objectModel = new ObjectModel();
+                        objectModel.set('type', checkboxsVal);
                         this.objectCollection.add(objectModel);
                     }
 
