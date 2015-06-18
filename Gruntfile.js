@@ -187,6 +187,7 @@ module.exports = function (grunt) {
                         'underscore': '../../<%= yeoman.app %>/bower_components/lodash/dist/lodash',
                         'backbone': '../../<%= yeoman.app %>/bower_components/backbone/backbone',
                         'gsap': '../../<%= yeoman.app %>/bower_components/gsap/src/minified/TweenMax.min',
+                        'famous': '../../<%= yeoman.app %>/bower_components/famous/dist/famous-global.min'
                     },
                     modules: [{name: 'main'}],
                     baseUrl: '<%= yeoman.app %>/scripts',

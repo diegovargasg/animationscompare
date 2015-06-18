@@ -17,7 +17,8 @@ require.config({
         backbone: '../bower_components/backbone/backbone',
         underscore: '../bower_components/lodash/dist/lodash',
         bootstrap: '../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap',
-        gsap: '../bower_components/gsap/src/minified/TweenMax.min'
+        gsap: '../bower_components/gsap/src/minified/TweenMax.min',
+        famous: '../bower_components/famous/dist/famous-global.min'
     }
 });
 

@@ -113,6 +113,17 @@ body {
     .plane-wrapper{
         margin: 35px 0;
     }
+    .plane-wrapper.famous{
+        position: relative;
+        height: 42px;
+        margin: 5px 0;
+    }
+}
+.famous-root{
+    overflow: auto !important;
+}
+.ajaxLoadingImg{
+    height: 42px;
 }
 /**
  *  Animation Styles
