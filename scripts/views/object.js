@@ -150,7 +150,7 @@ define([
                      */
                     var surfacePlane = new ImageSurface({
                         size: [45, 42],
-                        content: '../../images/icon_loading.png'
+                        content: 'images/icon_loading.png'
                     });
 
                     var modifierPlane = new Modifier();
